@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,42 +13,208 @@
 </head>
 
 <body>
-    <main class="bg-slate-400 h-[100vh]">
-        <div class="flex gap-8 px-8 py-8 rounded-3xl overflow-hidden w-[1200px] mx-auto">
+    <main class="bg-slate-400 ">
+        <div class="flex gap-8 px-6 py-6 rounded-3xl overflow-hidden  mx-auto">
             <div
-                class="bg-slate-100 absolute top-8 left-8 h-[90vh] flex flex-col px-4 divide-y-2 py-4 max-w-['250px'] shadow-lg rounded-lg">
+                class="bg-slate-100 absolute top-6 left-8 h-[95vh] flex flex-col px-4  py-4 max-w-['120px'] shadow-lg rounded-lg">
+                <div class="divide-y-2">
+                    <h2 class="text-2xl font-bold  text-blue-950 ">School</h2>
+                    <div class="py-2 pt-8">
+                        <h2 class="text-gray-700 font-bold text-xl">List of Courses</h2>
+                    </div>
+                    <div class="flex flex-col gap-1 py-4">
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center"><i
+                                class="text-blue-700 fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Course 1</a></span>
+                    </div>
+                    <div class="flex flex-col gap-2 py-4">
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center text-blue-700"><i
+                                class="fa-solid fa-book"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Summary</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center text-blue-700"><i
+                                class="fa-solid fa-gear"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Settings</a></span>
+                        <span class="flex gap-2 p-1 rounded-lg hover:bg-blue-100 items-center text-blue-700"><i
+                                class="fa-regular fa-bell"></i><a href="#courses"
+                                class="text-blue-900 hover:text-blue-500 text-sm">Notification</a></span>
 
-                <h2 class="text-2xl font-bold  text-blue-950 ">School</h2>
-                <div class="py-2 pt-8">
-                    <h2 class="text-gray-700 font-bold text-xl">List of Courses</h2>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-2 py-4">
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                    <span class="flex gap-2 items-center"><i class="text-blue-700 fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-md">Course 1</a></span>
-                </div>
-                <div class="flex flex-col gap-2 py-4">
-                    <span class="flex gap-2 items-center text-blue-700"><i class="fa-solid fa-book"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-lg">Summary</a></span>
-                    <span class="flex gap-2 items-center text-blue-700"><i class="fa-solid fa-gear"></i><a
-                            href="#courses" class="text-blue-900 hover:text-blue-500 text-lg">Settings</a></span>
+                <div class="profile absolute bottom-4 left-4 right-4  ">
+                    <div class="relative flex gap-[1px] flex-col justify-center">
 
+                        <div class="overflow-hidden w-[50px] mx-auto h-[50px] bg-orange-200 rounded-full ">
+                            <img class="w-full h-full object-cover" src="./img/profi.png" alt="">
+                        </div>
+                        <h2 class="font-bold text-lg text-gray-900 text-center">Samicowest </h2>
+                        <p class="text-lighter text-xs text-gray-500 text-center">butterflies@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ml-[200px] flex flex-col flex-1 py-4 border bg-gray-50 border-blue-200 rounded-xl">
+                <div class="flex justify-between items-center">
+
+                    <div class="rounded-lg p-4 ">
+                        <h2 class="text-lg text-blue-900 font-bold font-serif">List of Subjects</h2>
+                        <p class="text-blue-950 text-md">15 Subjects in Total </p>
+
+                    </div>
+                    <div class="flex  divide-x-2 ">
+                        <div class="flex flex-col gap-1 px-4">
+                            <h2 class="font-bold text-2xl">94</h2>
+                            <span class="text-gray-400 text-sm font-semibold">Awaiting</span>
+                        </div>
+                        <div class="flex flex-col gap-1 px-4">
+                            <h2 class="font-bold text-2xl">94</h2>
+                            <span class="text-gray-400 text-sm font-semibold">Pending</span>
+                        </div>
+                        <div class="flex flex-col gap-1 px-4">
+                            <h2 class="font-bold text-2xl">94</h2>
+                            <span class="text-gray-400 text-sm font-semibold">Done</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-4">
+
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-y border-slate-400 py-4 px-2">
+                                <th class="text-gray-400 text-md text-left py-4">Subject</th>
+                                <th class="text-gray-400 text-md text-left py-4">Status</th>
+                                <th class="text-gray-400 text-md text-left py-4">Start Time</th>
+                                <th class="text-gray-400 text-md text-left py-4">Run Time</th>
+                                <th class="text-gray-400 text-md text-left py-4">End Time</th>
+                                <th class="text-gray-400 text-md text-left py-4">Finish Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">English</td>
+                                <td class="text-gray-500 text-sm py-2">Pending</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">Mathematics</td>
+                                <td class="text-gray-500 text-sm py-2">Done</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">Chemistry</td>
+                                <td class="text-gray-500 text-sm py-2">Pending</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">Physics</td>
+                                <td class="text-gray-500 text-sm py-2">Pending</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">Geography</td>
+                                <td class="text-gray-500 text-sm py-2">Pending</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-500 text-sm py-2">Literature</td>
+                                <td class="text-gray-500 text-sm py-2">Pending</td>
+                                <td class="text-gray-500 text-sm py-2"> 1:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">2 hours</td>
+                                <td class="text-gray-500 text-sm py-2"> 3:10 pm</td>
+                                <td class="text-gray-500 text-sm py-2">7th July</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="px-4 py-4 flex gap-4">
+                    <div class="w-1/2 p-6 bg-white shadow-lg rounded-lg">
+                        <h2 class="text-xl font-semibold text-center mb-4">Exam View</h2>
+                        <div class="w-[250px] h-[250px] flex justify-center">
+
+                            <canvas id="myPieChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col flex-1">
 
-            </div>
         </div>
     </main>
+
+    <script>
+        // Data for the Pie Chart
+        const data = {
+            labels: ['pending', 'done', 'awaiting'],
+            datasets: [{
+                label: 'Sales Distribution',
+                data: [30, 25, 45],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // Configuration for the Pie Chart
+        const config = {
+            type: 'pie',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        enabled: true,
+                    }
+                }
+            },
+        };
+
+        // Render the Pie Chart
+        const ctx = document.getElementById('myPieChart').getContext('2d');
+        const myPieChart = new Chart(ctx, config);
+    </script>
 </body>
 
 </html>
